@@ -9,18 +9,18 @@ import java.util.Random;
 @Getter
 @Component
 @Scope("prototype")
-public class Backpack {
+public class Weapon {
     private final int id;
 
-    public Backpack() {
+    public Weapon() {
         Random random = new Random();
         id = random.nextInt(100);
     }
 
     @Override
     public String toString() {
-        return "Backpack{" +
-                "Backpack version=" + id +
+        return "Weapon{" +
+                "Weapon model=" + id +
                 '}';
     }
 }

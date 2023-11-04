@@ -12,17 +12,16 @@ public class SpringInit2Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(SpringInit2Application.class, args);
 
-		Backpack backpack = (Backpack) run.getBean("backpack");
-		Hero hero = (Hero)run.getBean("hero");
-		Backpack backpack2 = (Backpack) run.getBean("backpack");
-		Hero hero2 = (Hero)run.getBean("hero");
-		Backpack backpack3 = (Backpack) run.getBean("backpack");
+		BattleField battleField = (BattleField) run.getBean("battleField");
 
-		log.info(hero.toString());
-		log.info(hero2.toString());
-		log.info(backpack.toString());
-		log.info(backpack2.toString());
-		log.info(backpack3.toString());
+		log.info(battleField.getBackpack().toString());
+		log.info(battleField.getWeapon().toString());
+		log.info(battleField.getHero().toString());
+		log.info(battleField.getBackpack().toString());
+		log.info(battleField.getWeapon().toString());
+		log.info(battleField.getHero().toString());
+		log.info(battleField.getBackpack().toString());
+		log.info(battleField.getWeapon().toString());
 	}
 
 }
