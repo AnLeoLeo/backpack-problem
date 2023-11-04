@@ -15,14 +15,14 @@ class BattleFieldTest {
     BattleField battleField;
 
     @Test
-    void testGetHeroWithUniqueBackpack() {
-        Backpack b1 = battleField.getBackpack();
+    void testGetHeroWithUniqueWeapon() {
+        BackpackInterface b1 = battleField.getBackpack();
         Weapon w1 = battleField.getWeapon();
         Hero h1 = battleField.getHero();
-        Backpack b2 = battleField.getBackpack();
+        BackpackInterface b2 = battleField.getBackpack();
         Weapon w2 = battleField.getWeapon();
         Hero h2 = battleField.getHero();
-        Backpack b3 = battleField.getBackpack();
+        BackpackInterface b3 = battleField.getBackpack();
         Weapon w3 = battleField.getWeapon();
 
         Assert.isInstanceOf(Hero.class, h1);

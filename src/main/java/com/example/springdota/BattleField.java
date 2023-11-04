@@ -12,14 +12,14 @@ public class BattleField {
     }
 
     public Hero getHero() {
-        return (Hero)run.getBean("hero");
+        return run.getBean(Hero.class);
     }
 
-    public Backpack getBackpack() {
-        return (Backpack) run.getBean("backpack");
+    public BackpackInterface getBackpack() {
+        return run.getBean(BackpackInterface.class);
     }
 
     public Weapon getWeapon() {
-        return (Weapon) run.getBean("weapon");
+        return run.getBean(Weapon.class);
     }
 }
